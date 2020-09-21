@@ -21,7 +21,7 @@ Table of contents
 
 <!--ts-->
 * [Data-Collection](#Data-Collection)
-     *[Annotation](#Annotation)
+     * [Annotation](#Annotation)
 * [Framework](#Framework)
 * [Training](#Traing)
 * [Result](#Result)
