@@ -1,8 +1,5 @@
-Framework
-============
+**Intallation**
 
-Intallation
-============
 
 
 Before running th training, we need to install follwing packages:
@@ -33,22 +30,19 @@ $ pip install -r requirements.txt   ## pip == pip3
 In my case, I used `docker`. Installing `docker` will install all of the above packages.
 
 
-`.xml` to `.txt`
-================
+**`.xml` to `.txt`**
+
 
 We need to convert all `xml` files to `txt` format and move them to `custom/labels/`.
  To convert th `txt` [use this code](https://github.com/Laudarisd/People_Tracking/blob/master/Framework/custom/convert_xml_to_txt.py)
 
 
-Train & Val
-============
+**Train & Val**
+
 
 Separate all images to `train.txt` and `val.txt` files by using this [file](https://github.com/Laudarisd/People_Tracking/blob/master/Framework/custom/split.py) and move to `custom` folder.
 
-Edit `train.py` file
-=====================
-
-
+**Edit `train.py` file**
 
 
 
