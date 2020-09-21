@@ -130,7 +130,7 @@ Test
 
 
 
-[![Demo video](https://github.com/Laudarisd/People_Tracking/blob/master/img/1.png)](https://www.youtube.com/watch?v=a7xQ0Zo8IEA)
+[![Demo video]](https://www.youtube.com/watch?v=a7xQ0Zo8IEA)
 
 
 **Images**
