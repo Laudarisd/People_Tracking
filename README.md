@@ -88,7 +88,8 @@ Result
 
 
 
-After completing setup, we do [calibration]()
+
+
 
 <table border="0">
    <tr>
@@ -127,6 +128,9 @@ Test
    </table>
 
 
+
+
+[![Demo video](https://www.youtube.com/watch?v=a7xQ0Zo8IEA)](https://www.youtube.com/watch?v=a7xQ0Zo8IEA)
 
 
 **Images**
