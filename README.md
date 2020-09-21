@@ -20,17 +20,63 @@ Table of contents
 ==================
 
 <!--ts-->
-* [Data Collection](#Data Collection)
+* [Data-Collection](#Data-Collection)
+     *[Annotation](#Annotation)
 * [Framework](#Framework)
 * [Training](#Traing)
 * [Result](#Result)
       
 <!--te-->
 
-Data Collection
+Data-Collection
 ================
+Data collection, Data pre-processing task are eccential in every Deep learning project. In this project, I collected around 1000 images from different areas such as street, park, library, class room. 
 
+Annotation
+===========
 
+Another main task is labeling every object of the images. Since I requaried one class (i.e. `person` ), I use (`lablemg`)[https://github.com/tzutalin/labelImg] api to annotate my images. Sample of annotation files and image is given below:
+
+**Sample of `.xml` file**
+
+```
+<annotation>
+	<folder>img</folder>
+	<filename>1.jpg</filename>
+	<path>/home/sudip/Desktop/anotation/img/1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3264</width>
+		<height>2448</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>220</xmin>
+			<ymin>1135</ymin>
+			<xmax>408</xmax>
+			<ymax>1441</ymax>
+		</bndbox>
+	</object>
+</annotation>
+```
+
+**Sample of annotation image**
+
+<table border="0">
+   <tr>
+      <td>
+      <img src="./img/annotation.png" width="100%" />
+      </td>
+   </tr>
+</table>
 
 
 Framework
