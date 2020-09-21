@@ -168,6 +168,13 @@ for more information [click here](https://github.com/Laudarisd/Project_Root/blob
 Framework
 ===========
 
+After finishing the `data preparation` task, we can run the training. Inside of [`Framework`](https://github.com/Laudarisd/People_Tracking/tree/master/Framework) folder all the required information are given.
+
+After installing required `libraries` and editing necessary parts we can run the  training.
+
+```
+root@2af60c98e769:/data/yolov5# python3 train.py --data ./custom/coco128.yaml --cfg ./models/yolov5x.yaml --weights '' --batch-size 4 --device 0,1,2,3
+```
 
 
 Training
