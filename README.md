@@ -20,11 +20,17 @@ Table of contents
 ==================
 
 <!--ts-->
+* [Data Collection](#Data Collection)
 * [Framework](#Framework)
 * [Training](#Traing)
 * [Result](#Result)
       
 <!--te-->
+
+Data Collection
+================
+
+
 
 
 Framework
@@ -39,6 +45,9 @@ Training
    <tr>
       <td>
       <img src="./img/training_1.png" width="100%" />
+      </td>
+      <td>
+      <img src="./img/labels.jpg" width="100%" />
       </td>
    </tr>
 </table>
@@ -63,20 +72,10 @@ Training
 <table border="0">
    <tr>
       <td>
-      <img src="./img/labels.png" width="100%" />
-      </td>
-   </tr>
-   </table>
-
-
-<table border="0">
-   <tr>
-    <td>
       <img src="./img/train_batch2.jpg" width="100%" />
       </td>
    </tr>
    </table>
-
 
 Result
 =======
@@ -137,7 +136,7 @@ Test
 
 
 
-[![Demo video]](https://www.youtube.com/watch?v=a7xQ0Zo8IEA)
+[Demo video(https://www.youtube.com/watch?v=a7xQ0Zo8IEA)](https://www.youtube.com/watch?v=a7xQ0Zo8IEA)
 
 
 **Images**
