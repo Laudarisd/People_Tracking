@@ -173,12 +173,17 @@ After finishing the `data preparation` task, we can run the training. Inside of 
 After installing required `libraries` and editing necessary parts we can run the  training.
 
 ```
-root@2af60c98e769:/data/yolov5# python3 train.py --data ./custom/coco128.yaml --cfg ./models/yolov5x.yaml --weights '' --batch-size 4 --device 0,1,2,3
+root@2af60c98e769:/data/yolov5# python3 train.py --data ./path to yaml file  --cfg ./path to model `5x.yaml` --weights '' --batch-size 4 --device 0,1,2,3
 ```
 
 
 Training
 =============
+
+If everything is okay, it must show `epoch` and other images in the running directory.
+
+**Sample image of `runing training` and graphical view of `class, objectness`**
+
 
 <table border="0">
    <tr>
@@ -192,6 +197,8 @@ Training
 </table>
 
 
+**Sample images of training files**
+
 
 <table border="0">
    <tr>
@@ -201,20 +208,15 @@ Training
       <td>
       <img src="./img/train_batch1.jpg" width="100%" />
       </td>
-   </tr>
-   </table>
-
-
-
-
-
-<table border="0">
-   <tr>
       <td>
       <img src="./img/train_batch2.jpg" width="100%" />
       </td>
    </tr>
    </table>
+
+
+
+
 
 Result
 =======
