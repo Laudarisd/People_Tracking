@@ -65,11 +65,18 @@ Training
       <td>
       <img src="./img/labels.png" width="100%" />
       </td>
-      <td>
+   </tr>
+   </table>
+
+
+<table border="0">
+   <tr>
+    <td>
       <img src="./img/train_batch2.jpg" width="100%" />
       </td>
    </tr>
    </table>
+
 
 Result
 =======
