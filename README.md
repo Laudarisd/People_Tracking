@@ -158,7 +158,7 @@ def get_boxes(label_path):
     
 ```
 
-for more information (click here)[https://github.com/Laudarisd/Project_Root/blob/master/Data-preprocessing/Image-Augmentation-with-bounding-box/augmentations_with_bbox.py]
+for more information [click here](https://github.com/Laudarisd/Project_Root/blob/master/Data-preprocessing/Image-Augmentation-with-bounding-box/augmentations_with_bbox.py)
 
 
 
