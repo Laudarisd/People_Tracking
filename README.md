@@ -47,7 +47,7 @@ Training
       <img src="./img/training_1.png" width="100%" />
       </td>
       <td>
-      <img src="./img/labels.jpg" width="100%" />
+      <img src="./img/labels.png" width="100%" />
       </td>
    </tr>
 </table>
@@ -136,7 +136,7 @@ Test
 
 
 
-[Demo video(https://www.youtube.com/watch?v=a7xQ0Zo8IEA)](https://www.youtube.com/watch?v=a7xQ0Zo8IEA)
+[Demo video](https://www.youtube.com/watch?v=a7xQ0Zo8IEA)
 
 
 **Images**
