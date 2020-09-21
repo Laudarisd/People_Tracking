@@ -38,21 +38,54 @@ Training
 <table border="0">
    <tr>
       <td>
-      <img src="./Source/Data_collection/08181_product_w_1_1.png" width="100%" />
+      <img src="./img/training_1.png" width="100%" />
+      </td>
+   </tr>
+</table>
+
+
+
+<table border="0">
+   <tr>
+      <td>
+      <img src="./img/train_batch0.jpg" width="100%" />
       </td>
       <td>
-      <img src="./Source/Data_collection/08181_product_w_2_1.png" width="100%" />
-      </td>
-      <td>
-      <img src="./Source//Data_collection/08181_product_w_2_3.png" width="100%" />
+      <img src="./img/train_batch1.jpg" width="100%" />
       </td>
    </tr>
    </table>
 
 
 
+
+
+<table border="0">
+   <tr>
+      <td>
+      <img src="./img/labels.jpg" width="100%" />
+      </td>
+      <td>
+      <img src="./img/train_batch2.jpg" width="100%" />
+      </td>
+   </tr>
+   </table>
+
 Result
 =======
+<table border="0">
+   <tr>
+      <td>
+      <img src="./img/result_1.png" width="100%" />
+      </td>
+      <td>
+      <img src="./img/results.png" width="100%" />
+      </td>
+   </tr>
+</table>
+
+
+
 
 
 After completing setup, we do [calibration]()
@@ -60,13 +93,16 @@ After completing setup, we do [calibration]()
 <table border="0">
    <tr>
       <td>
-      <img src="./Source/Data_collection/08181_product_w_1_1.png" width="100%" />
+      <img src="./img/result_4.png" width="100%" />
       </td>
       <td>
-      <img src="./Source/Data_collection/08181_product_w_2_1.png" width="100%" />
+      <img src="./img/result_5.png" width="100%" />
       </td>
       <td>
-      <img src="./Source//Data_collection/08181_product_w_2_3.png" width="100%" />
+      <img src="./img/result_2.png" width="100%" />
+      </td>
+      <td>
+      <img src="./img/result_3.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -74,9 +110,25 @@ After completing setup, we do [calibration]()
 
 
 
+
+
 Test
 =====
- 
+
+<table border="0">
+   <tr>
+      <td>
+      <img src="./img/test_batch0_gt.jpg" width="100%" />
+      </td>
+      <td>
+      <img src="./img/test_batch0_pred.jpg" width="100%" />
+      </td>
+     </tr>
+   </table>
+
+
+
+
 **Images**
 
 
