@@ -63,7 +63,7 @@ Training
 <table border="0">
    <tr>
       <td>
-      <img src="./img/labels.jpg" width="100%" />
+      <img src="./img/labels.png" width="100%" />
       </td>
       <td>
       <img src="./img/train_batch2.jpg" width="100%" />
