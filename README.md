@@ -34,10 +34,12 @@ Data-Collection
 ================
 Data collection, Data pre-processing task are eccential in every Deep learning project. In this project, I collected around 1000 images from different areas such as street, park, library, class room. 
 
+
+
 Annotation
 ===========
 
-Another main task is labeling every object of the images. Since I requaried one class (i.e. `person` ), I use (`lablemg`)[https://github.com/tzutalin/labelImg] api to annotate my images. Sample of annotation files and image is given below:
+Another main task is labeling every object of the images. Since I requaried one class (i.e. `person` ), I use [`lablemg`](https://github.com/tzutalin/labelImg) api to annotate my images. Sample of annotation files and image is given below:
 
 **Sample of `.xml` file**
 
