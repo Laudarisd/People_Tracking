@@ -22,10 +22,12 @@ Table of contents
 <!--ts-->
 * [Data-Collection](#Data-Collection)
      * [Annotation](#Annotation)
+     * [Augmentation](#Augmentation)
 * [Framework](#Framework)
 * [Training](#Traing)
 * [Result](#Result)
-      
+
+
 <!--te-->
 
 Data-Collection
@@ -77,6 +79,88 @@ Another main task is labeling every object of the images. Since I requaried one 
       </td>
    </tr>
 </table>
+
+
+Augmentation
+=============
+Limited data is a major obstacle in applying deep learning models like CNN. If the model learns from a few example of a given class, it is likely to predict the class invalidation and test applications. 
+
+There are many ways to address complications associated with limited data in machine learning. Image augmentation is one useful techinique in building CNN that can increase the size of the training set without acquiring new images.
+
+In this project, I used `albumentations` to generate more images and corresponding `annotation files` by applying following hyperparameters.
+
+```
+from albumentations import(
+    BboxParams,
+    HorizontalFlip,
+    VerticalFlip,
+    Resize,
+    CenterCrop,
+    RandomCrop,
+    Crop,
+    Compose,
+    RandomContrast,
+    RandomBrightness,
+    IAASharpen,
+    MotionBlur,
+    OneOf)
+
+def get_aug(min_area=0., min_visibility=0.):
+    return Compose(
+        OneOf([
+        RandomContrast(p=0.2, limit=(-0.5,1)),   # -0.5 ~ 2 -- RandomBrightnessContrast
+        RandomBrightness(p=0.3, limit=(-0.2,0.1)),
+        HorizontalFlip(p=0.6),
+        ], p=0.8),
+
+        bbox_params=BboxParams(format='pascal_voc', min_area=min_area, 
+                               min_visibility=min_visibility, label_fields=['category_id'])
+                               
+    )
+```
+
+```
+##Import libraries
+import os
+import numpy as np
+import cv2
+import glob
+import xml.etree.ElementTree as ET
+from xml.dom import minidom
+```
+
+**To get the bounding boxes**
+
+```
+def get_boxes(label_path):
+    # print(label_path)
+    xml_path = os.path.join(label_path)
+
+    root_1 = minidom.parse(xml_path)  # xml.dom.minidom.parse(xml_path)
+    bnd_1 = root_1.getElementsByTagName('bndbox')
+    names = root_1.getElementsByTagName('name')
+    
+    result = []
+    name_list = []
+    category_id = []
+
+    for i in range(len(bnd_1)):
+        xmin = int(bnd_1[i].childNodes[1].childNodes[0].nodeValue)
+        ymin = int(bnd_1[i].childNodes[3].childNodes[0].nodeValue)
+        xmax = int(bnd_1[i].childNodes[5].childNodes[0].nodeValue)
+        ymax = int(bnd_1[i].childNodes[7].childNodes[0].nodeValue)
+
+        result.append((xmin,ymin,xmax,ymax))
+
+        name_list.append(names[i].childNodes[0].nodeValue)
+
+        category_id.append(i)
+    
+```
+
+for more information (click here)[https://github.com/Laudarisd/Project_Root/blob/master/Data-preprocessing/Image-Augmentation-with-bounding-box/augmentations_with_bbox.py]
+
+
 
 
 Framework
