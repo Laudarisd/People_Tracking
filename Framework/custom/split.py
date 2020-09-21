@@ -1,7 +1,7 @@
 import glob, os
 
 
-dataset_path = '/data/data/interminds/yolov5/custom/images'
+dataset_path = '/data/data/yolov5/custom/images'
 
 # Percentage of images to be used for the test set
 percentage_test = 10;
