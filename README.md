@@ -220,6 +220,13 @@ If everything is okay, it must show `epoch` and other images in the running dire
 
 Result
 =======
+
+If the training goes well, models will be saved in `runs` folder. Similarly the graph which includes `IoU`, `Precision`, `Recal`, `mAP`, and `val` will also be saved in the same folder. 
+
+In this section, we can see some results based on my model.
+
+**Result on ubuntu terminal and graph**
+
 <table border="0">
    <tr>
       <td>
@@ -233,9 +240,7 @@ Result
 
 
 
-
-
-
+**Result images with bounding boxes**
 
 
 <table border="0">
@@ -256,12 +261,38 @@ Result
    </table>
 
 
-
-
-
-
 Test
 =====
+
+To test the model in test data, need to run the command :
+
+**For live cam**
+
+```
+$ python3 detect.py --source 0 --weights ./weights/best.pt --conf 0.5 --iou 0.6 --device 0 
+
+```
+
+**For video**
+
+```
+$ python3 detect.py --source ./inference/video/ 'video file --weights ./weights/best.pt --conf 0.5 --iou 0.6 --device 0 
+
+```
+**Sample video with bounding boxes on ojects**
+
+[Demo video](https://www.youtube.com/watch?v=a7xQ0Zo8IEA)
+
+
+
+
+**For images**
+
+```
+$ python3 detect.py --source ./inference/ 'image path' --weights ./weights/best.pt --conf 0.5 --iou 0.6 --device 0 
+
+```
+
 
 <table border="0">
    <tr>
@@ -276,12 +307,11 @@ Test
 
 
 
+References
+=============
 
-[Demo video](https://www.youtube.com/watch?v=a7xQ0Zo8IEA)
-
-
-**Images**
-
+* https://github.com/ultralytics/yolov5
+* https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection
 
 
 
